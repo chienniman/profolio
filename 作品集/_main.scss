@@ -1,0 +1,67 @@
+#about{
+    text-align: center;
+    #particles-js {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        background-image:
+            linear-gradient(rgba(0, 0, 0, 0.7),
+                rgba(0, 0, 0, 0.7)),
+            url("./pictures/about.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+
+    .center-text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    h1{
+        color: rgb(17, 200, 233);
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 80px;
+        white-space: nowrap;
+    }
+    h2{
+        margin-top: 20px;
+        color: rgb(18, 178, 252);
+        font-size: 40px;
+    }
+    .my-info{
+        width: 200px;
+        cursor: pointer;
+        position: absolute;
+        left: 90%;
+        top: 150px;
+        &:hover .info-reveal{
+        visibility: visible; 
+        } 
+        @media(max-width:732px){
+            display: none;
+        }
+        .info-reveal{
+            font-family:'Ma Shan Zheng', cursive; 
+            font-weight: bold;
+            border-radius: 5px;
+            left: 150px;
+            top: 100px;
+            width: 200px;
+            padding: 10px;
+            position: absolute;
+            visibility: hidden;
+            text-align: left;
+            background: white;
+            color: black;
+            @media(max-width:1128px){
+                left: 0px;
+                top: 300px;
+            }
+            @media(max-width:732px){
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,189 @@
+@mixin flex($justify-content,$align-items){
+    display: flex;
+    justify-content:$justify-content;
+    align-items:$align-items;
+    }
+    .d-flex{
+        display: flex;
+    }
+    .d-none{
+        display: none;
+    }
+    .d-block{
+        display: block;
+    }
+    .header 
+     {  
+       z-index: 999;
+        width: 100%; 
+        position: fixed;
+        border: 5px solid ;
+        border-radius: 2px;
+        border-image: linear-gradient(45deg, #4682b4,#b0c4de);
+        background: linear-gradient(#4682b4,#b0c4de);
+        animation: huerotate 10s infinite linear;
+            @keyframes huerotate {
+                0% {
+                    filter: hue-rotate(150deg);
+                }
+                100% {
+                    filter: hue-rorate(240deg);
+                }
+            }
+        .wrapper{
+            @include flex(space-around,center);
+            height:10vh;
+            }
+            .marquee{
+                margin-right:3%;
+                background:black;
+                border:2px solid yellowgreen;
+                border-radius:5px;
+                text-align: center;
+                padding:0.5em 2em;
+                h2{
+                    line-height:3vh ;
+                    width: 100%;
+                    white-space: nowrap;
+                    color: yellowgreen;
+                    font-weight: bold;
+                    border-right: 1px solid yellowgreen;
+                    overflow: hidden;
+                    animation: typing 3s steps(43, end),
+                    cursor-blink 0.3s step-end infinite alternate;
+                }
+                @keyframes typing {
+                    from {
+                        width: 0;
+                    }
+                }
+                @keyframes cursor-blink {
+                    50% {
+                        border-color: transparent;
+                    }
+                }
+                @media(max-width:1383px){
+                    &{
+                    display: none;
+                    }
+                }
+                @media(max-width:768px){
+                    &{
+                    display: block;
+                    position: absolute;
+                    top: 100%;
+                    left: -5px;
+                    width: 100%;
+                        }
+                    h2{
+                        width:91%;
+                        animation: typing 3s steps(43, end),
+                        cursor-blink 0.3s step-end infinite alternate;
+                    }
+                    .marquee-first-h2{
+                        display: none;
+                    }
+                    .marquee-second-h2{
+                        display: block;
+                    }
+                  
+                }
+            }
+            .nav-right{
+                .nav-item{
+                    &:hover{
+                        border-bottom: 2px solid black;
+                    }
+                }
+                @media(max-width:732px){
+                    &{
+                        display: none;
+                    }
+                }
+            }
+            .nav-list{
+                @include flex(center,center)
+            }
+            .nav-item{
+                height: 20px;
+                margin-right: 30px;
+               
+                a{
+                    white-space: nowrap;
+                }
+                @media(max-width:732px){
+                    width: 100vw;
+                }
+            }
+           
+    
+        }
+    .menu{
+        position: absolute;
+        top: 10%;
+        left: -2%;
+        @media(max-width:732px){
+            display: block;
+            cursor: pointer;
+            .nav-link{
+                text-decoration: none;
+                color: black;
+            }
+            //layout
+            .dropdown {
+                width:100vw;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                .form {
+                    display: flex;
+                    input {
+                        width: 200px;
+                    }
+                    .button {
+                        width: 50px;
+                        .fa-bars{
+                            transform: rotate(0deg);
+                            transition: all 0.6s;
+                            &.active {
+                                transform: rotate(180deg);
+                            }
+                        }
+                    }
+                    button {
+                        border: none;
+                        padding: 20px 5px;
+                        background-color: lightcyan;
+                        border-radius: 5px;
+                        color:black;
+                        margin-left: 20px;
+                        cursor: pointer;
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+                .dropdownList {
+                    display: none;
+                    background-color:aquamarine;
+                    opacity: 0.9;
+                    height: 50vh;
+                    border: 2px solid black;
+                    .nav-item{
+                        padding: 30px;
+                        border-bottom: 2px solid black;
+                    }
+                    .nav-link{
+                        padding: 30px 500px 30px 80px; 
+                    }
+                }
+            }
+            
+        }
+        }    
+
+
+     
+      
+    
+    

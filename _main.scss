@@ -11,6 +11,9 @@ $primary-color : #12b2fc;
     color: red!important;
     font-weight: 600;
 }
+body{
+    overflow-x: hidden;
+}
 #about{
     text-align: center;
     #particles-js {
@@ -79,7 +82,7 @@ $primary-color : #12b2fc;
     }
 }
 #webDeve{
-    padding-top: 300px;
+    padding: 300px 0;
     background: rgb(209, 209, 214);
     .skill{
         position: relative;
@@ -87,8 +90,9 @@ $primary-color : #12b2fc;
     }
     .skill_mastery{
         position: absolute;
-        top: -200px;
-        left: 42%;
+        top: -150px;
+        left: 50%;
+        transform: translateX(-50%);
         h3{
             color: $primary-color;
             font-weight: 800;
@@ -138,6 +142,7 @@ $primary-color : #12b2fc;
         }
         .front_end_list{
             display: flex;
+            flex-wrap: wrap;
             justify-content: center;
             padding: 50px 0;
             li{
@@ -146,7 +151,7 @@ $primary-color : #12b2fc;
                 color: black;
                 width: 100px;
                 padding: 20px 10px;
-                margin: 0 20px;
+                margin: 20px;
                 text-align: center;
                 border-radius: 10px;
             }
@@ -171,6 +176,7 @@ $primary-color : #12b2fc;
         .back_end_list{
             display: flex;
             justify-content: center;
+            flex-wrap: wrap;
             padding: 50px 0;
             li{
                 background: #17a2b8;
@@ -178,11 +184,43 @@ $primary-color : #12b2fc;
                 color: black;
                 width: 100px;
                 padding: 20px 10px;
-                margin: 0 20px;
+                margin: 20px;
                 text-align: center;
                 border-radius: 10px;
             }
         }
     }
-   
+    .cooperation{
+        .title{
+            width: 250px;
+            margin: 0 auto;
+            padding: 20px 10px;
+            border-radius: 10px;
+            border: 2px solid goldenrod;
+            background:  goldenrod;
+            text-align: center;
+            h3{
+                font-size: 30px;
+                color: black;
+                white-space: nowrap;
+            }
+        }
+        .cooperation_list{
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            padding: 50px 0;
+            li{
+                background: goldenrod;;
+                border: 2px solid goldenrod;;
+                color: black;
+                width: 100px;
+                padding: 20px 10px;
+                margin: 20px;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+        
+    }
 }

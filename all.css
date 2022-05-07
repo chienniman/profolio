@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap");
 .d-flex {
   display: -webkit-box;
@@ -58,7 +59,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 10vh;
+  min-height: 100px;
 }
 
 .header .marquee {
@@ -186,7 +187,7 @@
     color: black;
   }
   .menu .dropdown {
-    width: 100vw;
+    width: 100%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -233,7 +234,6 @@
     display: none;
     background-color: aquamarine;
     opacity: 0.9;
-    height: 50vh;
     border: 2px solid black;
   }
   .menu .dropdown .dropdownList .nav-item {
@@ -243,6 +243,21 @@
   .menu .dropdown .dropdownList .nav-link {
     padding: 30px 500px 30px 80px;
   }
+}
+
+.understand {
+  color: black !important;
+  font-weight: 600;
+}
+
+.Familiar {
+  color: blue !important;
+  font-weight: 600;
+}
+
+.skilled {
+  color: red !important;
+  font-weight: 600;
 }
 
 #about {
@@ -324,6 +339,132 @@
   #about .my-info .info-reveal {
     display: none;
   }
+}
+
+#webDeve {
+  padding-top: 300px;
+  background: #d1d1d6;
+}
+
+#webDeve .skill {
+  position: relative;
+}
+
+#webDeve .skill_mastery {
+  position: absolute;
+  top: -200px;
+  left: 42%;
+}
+
+#webDeve .skill_mastery h3 {
+  color: #12b2fc;
+  font-weight: 800;
+}
+
+#webDeve .skill_mastery .skill_text span {
+  display: block;
+  padding: 10px 0;
+}
+
+#webDeve .skill_mastery .skill_text span:nth-child(1) {
+  color: black;
+}
+
+#webDeve .skill_mastery .skill_text span:nth-child(1)::after {
+  content: '查詢文件、原始碼，研究後完成任務';
+  margin-left: 10px;
+}
+
+#webDeve .skill_mastery .skill_text span:nth-child(2) {
+  color: blue;
+}
+
+#webDeve .skill_mastery .skill_text span:nth-child(2)::after {
+  content: '完成大部分任務';
+  margin-left: 10px;
+}
+
+#webDeve .skill_mastery .skill_text span:nth-child(3) {
+  color: red;
+}
+
+#webDeve .skill_mastery .skill_text span:nth-child(3)::after {
+  content: '快速地獨立完成任務，能夠解決其他人問題';
+  margin-left: 10px;
+}
+
+#webDeve .front-end-skill .title {
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: 2px solid green;
+  background: yellowgreen;
+  text-align: center;
+}
+
+#webDeve .front-end-skill .title h3 {
+  font-size: 30px;
+  color: blue;
+  white-space: nowrap;
+}
+
+#webDeve .front-end-skill .front_end_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+}
+
+#webDeve .front-end-skill .front_end_list li {
+  background: yellowgreen;
+  border: 2px solid green;
+  color: black;
+  width: 100px;
+  padding: 20px 10px;
+  margin: 0 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#webDeve .back-end-skill .title {
+  width: 250px;
+  margin: 0 auto;
+  padding: 20px 10px;
+  border-radius: 10px;
+  border: 2px solid #17a2b8;
+  background: #17a2b8;
+  text-align: center;
+}
+
+#webDeve .back-end-skill .title h3 {
+  font-size: 30px;
+  color: blue;
+  white-space: nowrap;
+}
+
+#webDeve .back-end-skill .back_end_list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 50px 0;
+}
+
+#webDeve .back-end-skill .back_end_list li {
+  background: #17a2b8;
+  border: 2px solid #17a2b8;
+  color: black;
+  width: 100px;
+  padding: 20px 10px;
+  margin: 0 20px;
+  text-align: center;
+  border-radius: 10px;
 }
 
 .header .logo {

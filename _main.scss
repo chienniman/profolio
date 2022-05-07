@@ -1,3 +1,16 @@
+$primary-color : #12b2fc;
+.understand{
+    color: black!important;
+    font-weight: 600;
+}
+.Familiar{
+    color: blue !important;
+    font-weight: 600;
+}
+.skilled{
+    color: red!important;
+    font-weight: 600;
+}
 #about{
     text-align: center;
     #particles-js {
@@ -64,4 +77,112 @@
             }
         }
     }
+}
+#webDeve{
+    padding-top: 300px;
+    background: rgb(209, 209, 214);
+    .skill{
+        position: relative;
+        
+    }
+    .skill_mastery{
+        position: absolute;
+        top: -200px;
+        left: 42%;
+        h3{
+            color: $primary-color;
+            font-weight: 800;
+        }
+        .skill_text{
+            span{
+                display: block;
+                padding: 10px 0;
+            }
+            span:nth-child(1){
+                color: black;
+                &::after{
+                    content: '查詢文件、原始碼，研究後完成任務';
+                    margin-left: 10px;
+                }
+            }
+            span:nth-child(2){
+                color:blue;
+                &::after{
+                    content: '完成大部分任務';
+                    margin-left: 10px;
+                }
+            }
+            span:nth-child(3){
+                color:red;
+                &::after{
+                    content: '快速地獨立完成任務，能夠解決其他人問題';
+                    margin-left: 10px;
+                }
+            }
+        }
+    }
+    .front-end-skill{
+        .title{
+            width: 250px;
+            margin: 0 auto;
+            padding: 20px 10px;
+            border-radius: 10px;
+            border: 2px solid green;
+            background:  yellowgreen;;
+            text-align: center;
+            h3{
+                font-size: 30px;
+                color: blue;
+                white-space: nowrap;
+            }
+        }
+        .front_end_list{
+            display: flex;
+            justify-content: center;
+            padding: 50px 0;
+            li{
+                background: yellowgreen;
+                border: 2px solid green;
+                color: black;
+                width: 100px;
+                padding: 20px 10px;
+                margin: 0 20px;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+        
+    }
+    .back-end-skill{
+        .title{
+            width: 250px;
+            margin: 0 auto;
+            padding: 20px 10px;
+            border-radius: 10px;
+            border: 2px solid #17a2b8;
+            background:  #17a2b8;
+            text-align: center;
+            h3{
+                font-size: 30px;
+                color: blue ;
+                white-space: nowrap;
+            }
+        }
+        .back_end_list{
+            display: flex;
+            justify-content: center;
+            padding: 50px 0;
+            li{
+                background: #17a2b8;
+                border: 2px solid #17a2b8;
+                color: black;
+                width: 100px;
+                padding: 20px 10px;
+                margin: 0 20px;
+                text-align: center;
+                border-radius: 10px;
+            }
+        }
+    }
+   
 }

@@ -81,6 +81,30 @@ body{
         }
     }
 }
+#timeline{
+    height: 600px;
+    background: $primary-color ;
+    ul li {
+        list-style-type: none;
+        position: relative;
+        width: 6px;
+        margin: 0 auto;
+        padding-top: 50px;
+        background: #fff;
+      }
+      
+    ul li::after {
+        // content: '';
+        // position: absolute;
+        // left: 50%;
+        // bottom: 0;
+        // transform: translateX(-50%);
+        // width: 30px;
+        // height: 30px;
+        // border-radius: 50%;
+        // background: inherit;
+      }
+}
 #webDeve{
     padding: 300px 0;
     background: rgb(209, 209, 214);
@@ -96,32 +120,27 @@ body{
         h3{
             color: $primary-color;
             font-weight: 800;
+            text-align: center;
         }
         .skill_text{
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
             span{
                 display: block;
-                padding: 10px 0;
+                padding: 10px 30px;
+                margin: 0 20px;
+                background:$primary-color;
+                border-radius: 10px;
             }
             span:nth-child(1){
                 color: black;
-                &::after{
-                    content: '查詢文件、原始碼，研究後完成任務';
-                    margin-left: 10px;
-                }
             }
             span:nth-child(2){
                 color:blue;
-                &::after{
-                    content: '完成大部分任務';
-                    margin-left: 10px;
-                }
             }
             span:nth-child(3){
                 color:red;
-                &::after{
-                    content: '快速地獨立完成任務，能夠解決其他人問題';
-                    margin-left: 10px;
-                }
             }
         }
     }

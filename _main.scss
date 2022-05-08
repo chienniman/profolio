@@ -82,7 +82,7 @@ body{
     }
 }
 #timeline{
-    height: 600px;
+    height: 900px;
     background: $primary-color ;
     ul li {
         list-style-type: none;
@@ -94,18 +94,19 @@ body{
       }
       
     ul li::after {
-        // content: '';
-        // position: absolute;
-        // left: 50%;
-        // bottom: 0;
-        // transform: translateX(-50%);
-        // width: 30px;
-        // height: 30px;
-        // border-radius: 50%;
-        // background: inherit;
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: inherit;
       }
 }
 #webDeve{
+    background-image: url('./pictures/Word\ Art.png');
     padding: 300px 0;
     background: rgb(209, 209, 214);
     .skill{
@@ -242,4 +243,5 @@ body{
         }
         
     }
+   
 }

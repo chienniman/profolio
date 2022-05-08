@@ -345,7 +345,7 @@ body {
 }
 
 #timeline {
-  height: 600px;
+  height: 900px;
   background: #12b2fc;
 }
 
@@ -358,7 +358,21 @@ body {
   background: #fff;
 }
 
+#timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+}
+
 #webDeve {
+  background-image: url("./pictures/Word Art.png");
   padding: 300px 0;
   background: #d1d1d6;
 }

@@ -1,16 +1,18 @@
 $primary-color : #12b2fc;
-.understand{
-    color: black!important;
-    font-weight: 600;
-}
-.Familiar{
-    color: blue !important;
-    font-weight: 600;
-}
-.skilled{
-    color: red!important;
-    font-weight: 600;
-}
+$main_text:rgb(12, 3, 95);
+$timeline_color: #f3d4d6;
+// .understand{
+//     color: black!important;
+//     font-weight: 600;
+// }
+// .Familiar{
+//     color: blue !important;
+//     font-weight: 600;
+// }
+// .skilled{
+//     color: red!important;
+//     font-weight: 600;
+// }
 body{
     overflow-x: hidden;
 }
@@ -21,9 +23,9 @@ body{
         width: 100%;
         height: 100vh;
         background-image:
-            linear-gradient(rgba(0, 0, 0, 0.7),
-                rgba(0, 0, 0, 0.7)),
-            url("./pictures/about.jpg");
+            linear-gradient(rgba(144, 167, 241, 0.6),
+                rgba(255, 255, 255, 0.6)),
+            url("./pictures/christopher-gower-m_HRfLhgABo-unsplash.jpg");
         background-position: center;
         background-size: cover;
     }
@@ -36,14 +38,14 @@ body{
     }
 
     h1{
-        color: rgb(17, 200, 233);
+        color: $main_text;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         font-size: 80px;
         white-space: nowrap;
     }
     h2{
         margin-top: 20px;
-        color: rgb(18, 178, 252);
+        color:$main_text;
         font-size: 40px;
     }
     .my-info{
@@ -82,28 +84,71 @@ body{
     }
 }
 #timeline{
-    height: 900px;
-    background: $primary-color ;
+    padding-bottom: 100px;
+    background: $primary-color;
     ul li {
+        //時間線主軸
         list-style-type: none;
         position: relative;
-        width: 6px;
+        width: 5px;
         margin: 0 auto;
         padding-top: 50px;
-        background: #fff;
-      }
-      
-    ul li::after {
-        content: '';
-        position: absolute;
-        left: 50%;
-        bottom: 0;
-        transform: translateX(-50%);
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background: inherit;
-      }
+        background: rgb(12, 3, 95);
+        //時間線上的小球
+        &::after{
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 0;
+            transform: translateX(-50%);
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background: inherit;
+        }
+        // 對話框通用性設定
+        div{
+            position: relative;
+            bottom: 0;
+            width: 400px;
+            padding: 15px;
+            background: $timeline_color;
+            &::before {
+                content: '';
+                position: absolute;
+                bottom: 7px;
+                width: 0;
+                height: 0;
+                border-style: solid;
+            }
+        }
+        //奇數對話框
+        &:nth-child(odd) 
+            div {
+                left: 45px;    
+            //小箭頭
+            &::before {
+                left: -15px;
+                border-width: 8px 16px 8px 0;
+                border-color: transparent $timeline_color transparent transparent;
+            }
+        }
+         //偶數對話框
+        &:nth-child(even) 
+            div {
+                left: -480px;    
+                //小箭頭
+        
+            &::before {
+                right: -15px;
+                border-width: 8px 0 8px 16px;
+                border-color: transparent transparent transparent $timeline_color;
+            }
+                
+        }
+    }
+       
+  
 }
 #webDeve{
     padding: 300px 0;

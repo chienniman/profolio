@@ -106,9 +106,21 @@ body{
       }
 }
 #webDeve{
-    background-image: url('./pictures/Word\ Art.png');
     padding: 300px 0;
     background: rgb(209, 209, 214);
+    position: relative;
+    .cloud{
+        position: absolute;
+        width: 200px;
+        height: 100px;
+        background-image: url('./pictures/cloud-removebg-preview.png');
+        background-size: cover;
+        top: 0;
+    }
+    .bg-img{
+        background-image: url('./pictures/Word\ Art.png');
+        background-attachment: fixed
+    }
     .skill{
         position: relative;
         

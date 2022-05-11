@@ -330,6 +330,10 @@ body {
   background: #12b2fc;
 }
 
+#timeline .red {
+  color: red;
+}
+
 #timeline ul li {
   list-style-type: none;
   position: relative;
@@ -397,10 +401,6 @@ body {
 #timeline .time {
   font-size: 30px;
   color: brown;
-}
-
-#timeline .danger_color {
-  color: red;
 }
 
 #timeline .text_small {

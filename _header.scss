@@ -35,6 +35,7 @@
             min-height: 100px;
             }
             .marquee{
+                @include flex(center,center);
                 margin-right:3%;
                 background:black;
                 border:2px solid yellowgreen;
@@ -63,30 +64,14 @@
                     }
                 }
                 @media(max-width:1383px){
-                    &{
-                    display: none;
-                    }
-                }
-                @media(max-width:768px){
-                    &{
-                    display: block;
                     position: absolute;
-                    top: 100%;
-                    left: -5px;
                     width: 100%;
-                        }
+                    left: 50%;
+                    transform: translate(-50%);
+                    top: 100px;
                     h2{
-                        width:91%;
-                        animation: typing 3s steps(43, end),
-                        cursor-blink 0.3s step-end infinite alternate;
+                        max-width: 600px;
                     }
-                    .marquee-first-h2{
-                        display: none;
-                    }
-                    .marquee-second-h2{
-                        display: block;
-                    }
-                  
                 }
             }
             .nav-right{

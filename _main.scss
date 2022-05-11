@@ -1,18 +1,6 @@
 $primary-color : #12b2fc;
 $main_text:rgb(12, 3, 95);
 $timeline_color: #f3d4d6;
-// .understand{
-//     color: black!important;
-//     font-weight: 600;
-// }
-// .Familiar{
-//     color: blue !important;
-//     font-weight: 600;
-// }
-// .skilled{
-//     color: red!important;
-//     font-weight: 600;
-// }
 body{
     overflow-x: hidden;
 }
@@ -162,10 +150,9 @@ body{
         font-size: 20px;
         padding-left: 10px;
     }
-  
 }
 #webDeve{
-    padding: 300px 0;
+    padding-top: 300px;
     background: rgb(209, 209, 214);
     position: relative;
     .cloud{
@@ -315,4 +302,23 @@ body{
         
     }
    
+}
+#project{
+   .project-title{
+       text-align: center;
+       font-size: 50px;
+   }
+    padding: 100px 200px;
+    background: $primary-color;
+    .Project{
+        margin-bottom: 100px;
+    }
+    .text_large{
+        font-size: 40px;
+    }
+    .title{
+        
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
 }

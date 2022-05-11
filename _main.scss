@@ -147,7 +147,21 @@ body{
                 
         }
     }
-       
+    .text{
+        color: rgb(12, 3, 95);
+        font-weight: 600;
+    }
+    .time{
+        font-size: 30px;
+        color: brown;
+    }
+    .danger_color{
+        color: red;
+    }   
+    .text_small{
+        font-size: 20px;
+        padding-left: 10px;
+    }
   
 }
 #webDeve{

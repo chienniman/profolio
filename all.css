@@ -393,6 +393,25 @@ body {
   border-color: transparent transparent transparent #f3d4d6;
 }
 
+#timeline .text {
+  color: #0c035f;
+  font-weight: 600;
+}
+
+#timeline .time {
+  font-size: 30px;
+  color: brown;
+}
+
+#timeline .danger_color {
+  color: red;
+}
+
+#timeline .text_small {
+  font-size: 20px;
+  padding-left: 10px;
+}
+
 #webDeve {
   padding: 300px 0;
   background: #d1d1d6;

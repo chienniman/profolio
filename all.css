@@ -652,9 +652,44 @@ body {
   background: #12b2fc;
 }
 
+#project .project_name {
+  position: relative;
+  background: whitesmoke;
+  padding-left: 200px;
+  border: 5px solid  #007bff;
+  height: 50px;
+  margin-bottom: 50px;
+}
+
+#project .triangel_front_end {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 50px;
+}
+
+#project .triangel_front_end .triangel_front, #project .triangel_front_end .triangel_end {
+  width: 100px;
+}
+
+#project .triangel {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 25px 0 25px 100px;
+  border-color: transparent transparent transparent #007bff;
+}
+
 #project .project-title {
   text-align: center;
   font-size: 50px;
+  margin-bottom: 100px;
 }
 
 #project .Project {

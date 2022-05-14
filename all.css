@@ -269,6 +269,10 @@ body {
           box-sizing: border-box;
 }
 
+.d-block {
+  display: block;
+}
+
 #about {
   text-align: center;
 }
@@ -450,7 +454,7 @@ body {
 }
 
 #timeline ul li:nth-child(even) div {
-  left: -480px;
+  left: -440px;
 }
 
 @media (max-width: 990px) {
@@ -713,8 +717,26 @@ body {
 
 #project {
   width: 100%;
-  padding: 100px 200px;
+  padding: 100px 100px;
   background: #12b2fc;
+}
+
+@media (max-width: 1024px) {
+  #project {
+    padding: 100px 60px;
+  }
+}
+
+@media (max-width: 768px) {
+  #project {
+    padding: 100px 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  #project {
+    padding: 100px 20px;
+  }
 }
 
 #project .project_name {
@@ -724,6 +746,12 @@ body {
   border: 7.5px solid  #007bff;
   height: 60px;
   margin-bottom: 50px;
+}
+
+@media (max-width: 768px) {
+  #project .project_name {
+    width: 90%;
+  }
 }
 
 #project .triangel_front_end {
@@ -792,6 +820,21 @@ body {
   border-color: transparent transparent transparent #007bff;
 }
 
+@media (max-width: 1024px) {
+  #project .triangel_end .triangel {
+    top: -12px;
+    border-width: 34px 0 34px 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  #project .triangel_end .triangel {
+    top: -28px;
+    left: 80px;
+    border-width: 50px 0 50px 100px;
+  }
+}
+
 #project .project-title {
   text-align: center;
   font-size: 50px;
@@ -811,8 +854,18 @@ body {
   margin-bottom: 50px;
 }
 
-#project .title::after {
+#project .team_project::after {
   content: '結訓專題';
+  font-size: 16px;
+}
+
+#project .my_project::after {
+  content: '我的個人作品';
+  font-size: 16px;
+}
+
+#project .certification::after {
+  content: '證書、研習與其他個人詳細經歷';
   font-size: 16px;
 }
 
@@ -826,7 +879,32 @@ body {
 
 #project .card-wrapper .card {
   width: 25%;
-  padding: 0 50px;
+  padding: 0 10px;
+}
+
+@media (max-width: 1024px) {
+  #project .card-wrapper .card {
+    width: 33.3%;
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  #project .card-wrapper .card {
+    width: 50%;
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 425px) {
+  #project .card-wrapper .card {
+    width: 100%;
+    padding: 0 40px;
+  }
+}
+
+#project .card-wrapper .card-img img {
+  width: 100% !important;
 }
 
 .header .logo {

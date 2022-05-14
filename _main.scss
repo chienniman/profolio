@@ -7,6 +7,9 @@ body{
 *, *::before, *::after {
     box-sizing: border-box;
 }
+.d-block{
+    display: block;
+}
 #about{
     text-align: center;
     #particles-js {
@@ -154,12 +157,11 @@ body{
          //偶數對話框
         &:nth-child(even) 
             div {
-                left: -480px;
+                left: -440px;
                 @media(max-width:990px){
                     left: 45px;  
                 }    
                 //小箭頭
-        
             &::before {
                 right: -15px;
                 border-width: 8px 0 8px 16px;
@@ -365,6 +367,17 @@ body{
 }
 #project{
     width: 100%;
+    padding: 100px 100px;
+    @media(max-width:1024px){
+        padding: 100px 60px;
+    }
+    @media(max-width:768px){
+        padding: 100px 40px;
+    }
+    @media(max-width:425px){
+        padding: 100px 20px;
+    }
+    background: $primary-color;
     .project_name{
         position: relative;
         background: whitesmoke;
@@ -372,7 +385,11 @@ body{
         border: 7.5px solid  #007bff;
         height: 60px;
         margin-bottom: 50px;
+        @media(max-width:768px){
+            width: 90%;
+        }
     }
+    //三角形
     .triangel_front_end{
         display: flex;
         justify-content: space-between;
@@ -424,6 +441,15 @@ body{
             border-style: solid;
             border-width: 32px 0 32px 100px;
             border-color: transparent transparent transparent #007bff;
+            @media(max-width:1024px){
+                top: -12px;
+                border-width: 34px 0 34px 50px;
+            }
+            @media(max-width:768px){
+                top: -28px;
+                left: 80px;
+                border-width: 50px 0 50px 100px;
+            }
         }
     }
    .project-title{
@@ -431,8 +457,7 @@ body{
        font-size: 50px;
        margin-bottom: 100px;
    }
-    padding: 100px 200px;
-    background: $primary-color;
+    
     .Project{
         margin-bottom: 100px;
     }
@@ -443,17 +468,51 @@ body{
     .title{
         font-size: 40px;
         margin-bottom: 50px;
+    }
+    .team_project{
         &::after{
             content: '結訓專題';
             font-size: 16px;
         }
     }
+    .my_project{
+        &::after{
+            content: '我的個人作品';
+            font-size: 16px;
+        }
+    }
+    .certification{
+        &::after{
+            content: '證書、研習與其他個人詳細經歷';
+            font-size: 16px;
+        }
+    }
+    //作品卡片
     .card-wrapper{
         display: flex;
         flex-wrap: wrap;
         .card{
             width: 25%;
-            padding: 0 50px;
+            padding: 0 10px;
+            @media(max-width:1024px){
+                width: 33.3%;
+                padding: 0 20px;
+            }
+            @media(max-width:768px){
+                width: 50%;
+                padding: 0 40px;
+            }
+            @media(max-width:425px){
+                width: 100%;
+                padding: 0 40px;
+            }
+        }
+        .card-img{
+            img{
+                width: 100%!important;
+            }
         }
     }
+    //彈跳式視窗設定
+   
 }

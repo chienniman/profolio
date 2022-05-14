@@ -2,7 +2,10 @@ $primary-color : #12b2fc;
 $main_text:rgb(12, 3, 95);
 $timeline_color: #f3d4d6;
 body{
-    overflow-x: hidden;
+    overflow-x: hidden !important;
+}
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 #about{
     text-align: center;
@@ -74,6 +77,10 @@ body{
 #timeline{
     padding-bottom: 100px;
     background: $primary-color;
+    .carrer_commits{
+        height: 200px;
+        background: #d1d1d6;
+    }
     .red{
         color: red;
     }
@@ -126,6 +133,12 @@ body{
             @media(max-width:600px){
                 width: 300px;
             }
+            @media(max-width:424px){
+                width: 250px;
+            }
+            @media(max-width:404px){
+                width: 150px;
+            }
         }
         //奇數對話框
         &:nth-child(odd) 
@@ -170,8 +183,18 @@ body{
         color: brown;
     } 
     .text_small{
-        font-size: 20px;
+        font-size: 14px;
         padding-left: 10px;
+        color: black;
+    }
+    .check{
+        display: block;
+        color: green;
+        margin-left: 5px;
+    }
+    .commit{
+        display: flex;
+        align-items: center;
     }
 }
 #webDeve{
@@ -179,6 +202,9 @@ body{
     background: rgb(209, 209, 214);
     position: relative;
     .cloud{
+        @media(max-width:340px){
+            width: 100%;
+        }
         position: absolute;
         width: 400px;
         height: 300px;
@@ -338,12 +364,13 @@ body{
    
 }
 #project{
+    width: 100%;
     .project_name{
         position: relative;
         background: whitesmoke;
         padding-left: 200px;
-        border: 5px solid  #007bff;
-        height: 50px;
+        border: 7.5px solid  #007bff;
+        height: 60px;
         margin-bottom: 50px;
     }
     .triangel_front_end{
@@ -352,17 +379,52 @@ body{
         position: absolute;
         left: 0;
         width: 100%;
-        height: 50px;
+        height: 60px;
         .triangel_front,.triangel_end{
             width: 100px;
         }
     }
-    .triangel{
+    .tri_top{
         width: 0;
-height: 0;
-border-style: solid;
-border-width: 25px 0 25px 100px;
-border-color: transparent transparent transparent #007bff;
+        height: 0;
+        border-style: solid;
+        border-width: 0 50px 50px 0;
+        border-color: transparent #007bff transparent transparent;
+
+    }
+    .tri_bottom{
+        width: 0;
+        height: 0;
+        border-style: solid;
+        border-width: 0 0 50px 50px;
+        border-color: transparent transparent #007bff transparent;
+    }
+    .triangel_front{
+        position: relative;
+        .tri_top,.tri_bottom{
+            position: absolute;
+        }
+        .tri_top{
+            top: -8px;
+            left: -50px; 
+        }
+        .tri_bottom{
+            left: -50px;
+            bottom: 8px;
+        }
+    }
+    .triangel_end{
+        position: relative;
+        .triangel{
+            left: 100px;
+            top: -10px;
+            position: absolute;
+            width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 32px 0 32px 100px;
+            border-color: transparent transparent transparent #007bff;
+        }
     }
    .project-title{
        text-align: center;
@@ -377,9 +439,21 @@ border-color: transparent transparent transparent #007bff;
     .text_large{
         font-size: 40px;
     }
+
     .title{
-        
-        font-size: 50px;
+        font-size: 40px;
         margin-bottom: 50px;
+        &::after{
+            content: '結訓專題';
+            font-size: 16px;
+        }
+    }
+    .card-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        .card{
+            width: 25%;
+            padding: 0 50px;
+        }
     }
 }

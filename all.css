@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&display=swap");
 .d-flex {
   display: -webkit-box;
@@ -25,6 +26,16 @@
   background: linear-gradient(#4682b4, #b0c4de);
   -webkit-animation: huerotate 10s infinite linear;
           animation: huerotate 10s infinite linear;
+}
+
+.header .text_small {
+  font-size: 12px;
+}
+
+@media (max-width: 747px) {
+  .header {
+    width: 100vw;
+  }
 }
 
 @-webkit-keyframes huerotate {
@@ -225,6 +236,15 @@
   .menu .dropdown .form button:focus {
     outline: none;
   }
+}
+
+@media (max-width: 732px) and (max-width: 425px) {
+  .menu .dropdown .form button {
+    background: none;
+  }
+}
+
+@media (max-width: 732px) {
   .menu .dropdown .dropdownList {
     display: none;
     background-color: aquamarine;
@@ -241,7 +261,12 @@
 }
 
 body {
-  overflow-x: hidden;
+  overflow-x: hidden !important;
+}
+
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 #about {
@@ -330,6 +355,11 @@ body {
   background: #12b2fc;
 }
 
+#timeline .carrer_commits {
+  height: 200px;
+  background: #d1d1d6;
+}
+
 #timeline .red {
   color: red;
 }
@@ -397,6 +427,18 @@ body {
   }
 }
 
+@media (max-width: 424px) {
+  #timeline ul li div {
+    width: 250px;
+  }
+}
+
+@media (max-width: 404px) {
+  #timeline ul li div {
+    width: 150px;
+  }
+}
+
 #timeline ul li:nth-child(odd) div {
   left: 45px;
 }
@@ -444,8 +486,24 @@ body {
 }
 
 #timeline .text_small {
-  font-size: 20px;
+  font-size: 14px;
   padding-left: 10px;
+  color: black;
+}
+
+#timeline .check {
+  display: block;
+  color: green;
+  margin-left: 5px;
+}
+
+#timeline .commit {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #webDeve {
@@ -464,6 +522,12 @@ body {
   left: 50%;
   -webkit-transform: translate(-50%);
           transform: translate(-50%);
+}
+
+@media (max-width: 340px) {
+  #webDeve .cloud {
+    width: 100%;
+  }
 }
 
 #webDeve .cloud .cloud_main {
@@ -648,6 +712,7 @@ body {
 }
 
 #project {
+  width: 100%;
   padding: 100px 200px;
   background: #12b2fc;
 }
@@ -656,8 +721,8 @@ body {
   position: relative;
   background: whitesmoke;
   padding-left: 200px;
-  border: 5px solid  #007bff;
-  height: 50px;
+  border: 7.5px solid  #007bff;
+  height: 60px;
   margin-bottom: 50px;
 }
 
@@ -671,18 +736,59 @@ body {
   position: absolute;
   left: 0;
   width: 100%;
-  height: 50px;
+  height: 60px;
 }
 
 #project .triangel_front_end .triangel_front, #project .triangel_front_end .triangel_end {
   width: 100px;
 }
 
-#project .triangel {
+#project .tri_top {
   width: 0;
   height: 0;
   border-style: solid;
-  border-width: 25px 0 25px 100px;
+  border-width: 0 50px 50px 0;
+  border-color: transparent #007bff transparent transparent;
+}
+
+#project .tri_bottom {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 50px 50px;
+  border-color: transparent transparent #007bff transparent;
+}
+
+#project .triangel_front {
+  position: relative;
+}
+
+#project .triangel_front .tri_top, #project .triangel_front .tri_bottom {
+  position: absolute;
+}
+
+#project .triangel_front .tri_top {
+  top: -8px;
+  left: -50px;
+}
+
+#project .triangel_front .tri_bottom {
+  left: -50px;
+  bottom: 8px;
+}
+
+#project .triangel_end {
+  position: relative;
+}
+
+#project .triangel_end .triangel {
+  left: 100px;
+  top: -10px;
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 32px 0 32px 100px;
   border-color: transparent transparent transparent #007bff;
 }
 
@@ -701,8 +807,26 @@ body {
 }
 
 #project .title {
-  font-size: 50px;
+  font-size: 40px;
   margin-bottom: 50px;
+}
+
+#project .title::after {
+  content: '結訓專題';
+  font-size: 16px;
+}
+
+#project .card-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#project .card-wrapper .card {
+  width: 25%;
+  padding: 0 50px;
 }
 
 .header .logo {

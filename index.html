@@ -8,7 +8,9 @@
     <meta name="description" content="你好，我叫簡柏毅，在網頁設計這條路不斷耕耘精進的生科人，希望能成為一位跨領域工程師">
      <link rel="stylesheet" href="reset.css">
      <link rel="stylesheet" href="all.css">
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+     <link rel="stylesheet" href="swiper.css">
      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
   <body>
@@ -448,7 +450,16 @@
                   <img src="https://dummyimage.com/720x400" style="width: 300px;" alt="多人開發專題">
                 </div>  
                 <div class="card-text">
-                 此專案正在建置中...
+                 此專案正在建置中...123
+                 <button class="myBtn_multi">Open Modal</button>
+                 <div class="modal modal_multi">
+                  <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close close_multi">×</span>
+                      <img src="./pictures/ipas.jpg" alt="">
+                      <p>Some text in the Modal..</p>
+                    </div>
+                  </div>
                 </div>      
               </div>
               <div class="card">
@@ -457,28 +468,38 @@
                 </div>  
                 <div class="card-text">
                  橫向卷軸射擊遊戲Bloody zombies
-                 <div class="wrapper">
-                  <h1>Simple jQuery Modal</h1>
-                  <button class="modal-toggle">Show modal</button>
-                </div>
-                <div class="modal">
-                  <div class="modal-overlay modal-toggle"></div>
-                  <div class="modal-wrapper modal-transition">
-                  <div class="modal-header">
-                    <button class="modal-close modal-toggle"><svg class="icon-close           icon" viewBox="0 0 32 32"><use xlink:href="#icon-close"></use>              </svg>
-                    </button>
-                    <h2 class="modal-heading">This is a modal</h2>
-                  </div>
-                  <div class="modal-body">
+                 <button class="myBtn_multi">詳細資訊</button>
+                 <div class="modal modal_multi">
+                  <!-- Modal content -->
                     <div class="modal-content">
-                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit eum delectus, libero, accusantium dolores inventore obcaecati placeat cum sapiente vel laboriosam similique totam id ducimus aperiam, ratione fuga blanditiis maiores.
-                      </p>
-                      <button class="modal-toggle">Update</button>
+                      <span class="close close_multi">×</span>
+                      <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div>
+                              <img src="./pictures/game/game1.jpg" alt="遊戲專題開發1">  
+                            </div>
+                            <div>
+                              <p class="no_wrap">
+                                由於本人是射擊遊戲的死忠粉
+                              </p>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">Slide 2</div>
+                          <div class="swiper-slide">Slide 3</div>
+                          <div class="swiper-slide">Slide 4</div>
+                          <div class="swiper-slide">Slide 5</div>
+                          <div class="swiper-slide">Slide 6</div>
+                          <div class="swiper-slide">Slide 7</div>
+                          <div class="swiper-slide">Slide 8</div>
+                          <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                      </div>
                     </div>
                   </div>
-                </div>
-              </div> 
-                </div>      
+                </div>     
               </div>
             </div>
           </div>
@@ -544,6 +565,7 @@
         </section>
         <section id="contact"></section>  
         <footer>copyright reserve</footer>
+  
           <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta eveniet quaerat amet. Nam quis cupiditate natus adipisci rem et? Ipsum fugiat molestiae est a rerum! Voluptatum itaque numquam commodi laudantium veritatis explicabo dolorum in repellendus assumenda, recusandae alias. Maxime pariatur accusantium doloremque, possimus amet atque doloribus quis eligendi, magnam hic obcaecati officia officiis aut unde totam fugiat, vitae debitis odio iusto necessitatibus accusamus minus illum quisquam? Nulla nesciunt eligendi deserunt non. Reprehenderit ducimus deleniti earum nemo aspernatur, nesciunt adipisci sequi similique rem ex excepturi inventore minus veniam. Aspernatur explicabo maiores eum dolor aliquam corporis deserunt laboriosam dolorem reprehenderit atque magnam enim sapiente fuga aliquid quas obcaecati ea facere eius ducimus vel, id quam. Corrupti autem eos quam, dicta enim, nisi maiores itaque voluptatibus aliquid, ea veniam nesciunt quibusdam? Cumque reiciendis corporis architecto nesciunt ad a cum quasi. Repellat, vitae libero? Maxime delectus dignissimos necessitatibus reprehenderit ea consequatur. Architecto odio molestias accusamus veniam rerum labore nulla quidem suscipit, ut fugiat vitae a inventore eos culpa autem nesciunt velit at delectus optio necessitatibus tempore eligendi dolore? Harum sequi, repellendus nostrum eum nemo, nobis optio obcaecati iste earum sapiente in molestiae? Porro earum aliquid eum in esse, modi accusamus ipsa, repudiandae ut consequatur odit quos incidunt atque libero necessitatibus! Distinctio incidunt, corporis consectetur vitae, dolorem voluptas, quas inventore voluptatibus placeat eum explicabo eius ullam cum quaerat. Minima cum enim ipsa doloribus eligendi consequuntur nostrum incidunt! Nisi blanditiis tenetur illum voluptates aspernatur beatae ipsa modi? Odio, deleniti atque adipisci tempore explicabo hic labore recusandae sequi laudantium. Ipsam sed voluptatibus minus nam porro, accusantium aut ex ea earum laudantium! Iusto in autem sequi, ipsam fugit sunt a ea cum quisquam expedita sint dolore quaerat odio magni. Id beatae incidunt corrupti vel impedit adipisci voluptatibus perspiciatis. Deserunt eum reprehenderit quisquam aliquid unde, dolores, aspernatur repudiandae, placeat nemo labore quidem totam. Voluptas vel fugiat deleniti, voluptatem adipisci voluptate, commodi repellendus impedit maiores consequuntur excepturi vitae, alias provident ea consequatur itaque aliquam? Voluptates voluptatem quibusdam adipisci, eligendi beatae non quidem possimus. Doloribus pariatur qui eveniet aliquid exercitationem reiciendis itaque laboriosam dolorem aut distinctio id quas non dolores labore accusantium iste eius minima architecto neque error quis quibusdam, voluptatum praesentium expedita. Alias minus, ex aut reiciendis doloribus consectetur! Delectus fugiat in facere nesciunt accusantium fugit aperiam vel deleniti blanditiis? Maiores quia molestiae nobis corporis iste culpa, pariatur adipisci labore. Nesciunt reprehenderit quo debitis laudantium blanditiis voluptas voluptatum, provident libero sapiente dicta odit. Maiores veritatis et dicta culpa hic recusandae unde impedit porro saepe consequatur voluptas ipsum consequuntur blanditiis fugiat error corrupti repudiandae nobis nam, ab repellat aperiam distinctio. Alias blanditiis repudiandae ad nemo inventore illum, sapiente, repellat impedit enim dolores ab voluptate laboriosam laborum deleniti. Neque cumque earum recusandae fugiat? Est aspernatur numquam, ea ipsam, maxime atque enim, magni esse sunt placeat ullam ex rerum saepe reiciendis quasi. Consequatur, iste eos voluptatem illo cupiditate sint tempore assumenda dolor? Nobis veniam quisquam
          rem, quas modi ipsam illum nam enim inventore cupiditate tenetur laborum quia esse aut corporis nisi maiores.</p>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta eveniet quaerat amet. Nam quis cupiditate natus adipisci rem et? Ipsum fugiat molestiae est a rerum! Voluptatum itaque numquam commodi laudantium veritatis explicabo dolorum in repellendus assumenda, recusandae alias. Maxime pariatur accusantium doloremque, possimus amet atque doloribus quis eligendi, magnam hic obcaecati officia officiis aut unde totam fugiat, vitae debitis odio iusto necessitatibus accusamus minus illum quisquam? Nulla nesciunt eligendi deserunt non. Reprehenderit ducimus deleniti earum nemo aspernatur, nesciunt adipisci sequi similique rem ex excepturi inventore minus veniam. Aspernatur explicabo maiores eum dolor aliquam corporis deserunt laboriosam dolorem reprehenderit atque magnam enim sapiente fuga aliquid quas obcaecati ea facere eius ducimus vel, id quam. Corrupti autem eos quam, dicta enim, nisi maiores itaque voluptatibus aliquid, ea veniam nesciunt quibusdam? Cumque reiciendis corporis architecto nesciunt ad a cum quasi. Repellat, vitae libero? Maxime delectus dignissimos necessitatibus reprehenderit ea consequatur. Architecto odio molestias accusamus veniam rerum labore nulla quidem suscipit, ut fugiat vitae a inventore eos culpa autem nesciunt velit at delectus optio necessitatibus tempore eligendi dolore? Harum sequi, repellendus nostrum eum nemo, nobis optio obcaecati iste earum sapiente in molestiae? Porro earum aliquid eum in esse, modi accusamus ipsa, repudiandae ut consequatur odit quos incidunt atque libero necessitatibus! Distinctio incidunt, corporis consectetur vitae, dolorem voluptas, quas inventore voluptatibus placeat eum explicabo eius ullam cum quaerat. Minima cum enim ipsa doloribus eligendi consequuntur nostrum incidunt! Nisi blanditiis tenetur illum voluptates aspernatur beatae ipsa modi? Odio, deleniti atque adipisci tempore explicabo hic labore recusandae sequi laudantium. Ipsam sed voluptatibus minus nam porro, accusantium aut ex ea earum laudantium! Iusto in autem sequi, ipsam fugit sunt a ea cum quisquam expedita sint dolore quaerat odio magni. Id beatae incidunt corrupti vel impedit adipisci voluptatibus perspiciatis. Deserunt eum reprehenderit quisquam aliquid unde, dolores, aspernatur repudiandae, placeat nemo labore quidem totam. Voluptas vel fugiat deleniti, voluptatem adipisci voluptate, commodi repellendus impedit maiores consequuntur excepturi vitae, alias provident ea consequatur itaque aliquam? Voluptates voluptatem quibusdam adipisci, eligendi beatae non quidem possimus. Doloribus pariatur qui eveniet aliquid exercitationem reiciendis itaque laboriosam dolorem aut distinctio id quas non dolores labore accusantium iste eius minima architecto neque error quis quibusdam, voluptatum praesentium expedita. Alias minus, ex aut reiciendis doloribus consectetur! Delectus fugiat in facere nesciunt accusantium fugit aperiam vel deleniti blanditiis? Maiores quia molestiae nobis corporis iste culpa, pariatur adipisci labore. Nesciunt reprehenderit quo debitis laudantium blanditiis voluptas voluptatum, provident libero sapiente dicta odit. Maiores veritatis et dicta culpa hic recusandae unde impedit porro saepe consequatur voluptas ipsum consequuntur blanditiis fugiat error corrupti repudiandae nobis nam, ab repellat aperiam distinctio. Alias blanditiis repudiandae ad nemo inventore illum, sapiente, repellat impedit enim dolores ab voluptate laboriosam laborum deleniti. Neque cumque earum recusandae fugiat? Est aspernatur numquam, ea ipsam, maxime atque enim, magni esse sunt placeat ullam ex rerum saepe reiciendis quasi. Consequatur, iste eos voluptatem illo cupiditate sint tempore assumenda dolor? Nobis veniam quisquam
@@ -571,6 +593,7 @@
         rem, quas modi ipsam illum nam enim inventore cupiditate tenetur laborum quia esse aut corporis nisi maiores.</p>
            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis soluta eveniet quaerat amet. Nam quis cupiditate natus adipisci rem et? Ipsum fugiat molestiae est a rerum! Voluptatum itaque numquam commodi laudantium veritatis explicabo dolorum in repellendus assumenda, recusandae alias. Maxime pariatur accusantium doloremque, possimus amet atque doloribus quis eligendi, magnam hic obcaecati officia officiis aut unde totam fugiat, vitae debitis odio iusto necessitatibus accusamus minus illum quisquam? Nulla nesciunt eligendi deserunt non. Reprehenderit ducimus deleniti earum nemo aspernatur, nesciunt adipisci sequi similique rem ex excepturi inventore minus veniam. Aspernatur explicabo maiores eum dolor aliquam corporis deserunt laboriosam dolorem reprehenderit atque magnam enim sapiente fuga aliquid quas obcaecati ea facere eius ducimus vel, id quam. Corrupti autem eos quam, dicta enim, nisi maiores itaque voluptatibus aliquid, ea veniam nesciunt quibusdam? Cumque reiciendis corporis architecto nesciunt ad a cum quasi. Repellat, vitae libero? Maxime delectus dignissimos necessitatibus reprehenderit ea consequatur. Architecto odio molestias accusamus veniam rerum labore nulla quidem suscipit, ut fugiat vitae a inventore eos culpa autem nesciunt velit at delectus optio necessitatibus tempore eligendi dolore? Harum sequi, repellendus nostrum eum nemo, nobis optio obcaecati iste earum sapiente in molestiae? Porro earum aliquid eum in esse, modi accusamus ipsa, repudiandae ut consequatur odit quos incidunt atque libero necessitatibus! Distinctio incidunt, corporis consectetur vitae, dolorem voluptas, quas inventore voluptatibus placeat eum explicabo eius ullam cum quaerat. Minima cum enim ipsa doloribus eligendi consequuntur nostrum incidunt! Nisi blanditiis tenetur illum voluptates aspernatur beatae ipsa modi? Odio, deleniti atque adipisci tempore explicabo hic labore recusandae sequi laudantium. Ipsam sed voluptatibus minus nam porro, accusantium aut ex ea earum laudantium! Iusto in autem sequi, ipsam fugit sunt a ea cum quisquam expedita sint dolore quaerat odio magni. Id beatae incidunt corrupti vel impedit adipisci voluptatibus perspiciatis. Deserunt eum reprehenderit quisquam aliquid unde, dolores, aspernatur repudiandae, placeat nemo labore quidem totam. Voluptas vel fugiat deleniti, voluptatem adipisci voluptate, commodi repellendus impedit maiores consequuntur excepturi vitae, alias provident ea consequatur itaque aliquam? Voluptates voluptatem quibusdam adipisci, eligendi beatae non quidem possimus. Doloribus pariatur qui eveniet aliquid exercitationem reiciendis itaque laboriosam dolorem aut distinctio id quas non dolores labore accusantium iste eius minima architecto neque error quis quibusdam, voluptatum praesentium expedita. Alias minus, ex aut reiciendis doloribus consectetur! Delectus fugiat in facere nesciunt accusantium fugit aperiam vel deleniti blanditiis? Maiores quia molestiae nobis corporis iste culpa, pariatur adipisci labore. Nesciunt reprehenderit quo debitis laudantium blanditiis voluptas voluptatum, provident libero sapiente dicta odit. Maiores veritatis et dicta culpa hic recusandae unde impedit porro saepe consequatur voluptas ipsum consequuntur blanditiis fugiat error corrupti repudiandae nobis nam, ab repellat aperiam distinctio. Alias blanditiis repudiandae ad nemo inventore illum, sapiente, repellat impedit enim dolores ab voluptate laboriosam laborum deleniti. Neque cumque earum recusandae fugiat? Est aspernatur numquam, ea ipsam, maxime atque enim, magni esse sunt placeat ullam ex rerum saepe reiciendis quasi. Consequatur, iste eos voluptatem illo cupiditate sint tempore assumenda dolor? Nobis veniam quisquam
         rem, quas modi ipsam illum nam enim inventore cupiditate tenetur laborum quia esse aut corporis nisi maiores.</p>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>      
   <script src="home_page.js"></script>
   <script src="./particles-js-main/particles.js"></script>
   <script src="./particles-js-main/app.js"></script>

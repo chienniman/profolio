@@ -719,6 +719,8 @@ body {
   width: 100%;
   padding: 100px 100px;
   background: #12b2fc;
+  /* Modal Content */
+  /* The Close Button */
 }
 
 @media (max-width: 1024px) {
@@ -905,6 +907,51 @@ body {
 
 #project .card-wrapper .card-img img {
   width: 100% !important;
+}
+
+#project .modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+}
+
+#project .modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+#project .close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+#project .close:hover,
+#project .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .header .logo {

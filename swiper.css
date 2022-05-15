@@ -64,3 +64,10 @@ body {
   text-align: left;
   padding: 10%;
 }
+.tutor_boss_swiper .qa li{
+  padding: 30px 10px;
+  background: rgb(240, 221, 196);
+}
+.tutor_boss_swiper .qa li .point{
+  color: brown;
+}

@@ -389,7 +389,7 @@ body{
             width: 90%;
         }
     }
-    //三角形
+    //三角形標題設定
     .triangel_front_end{
         display: flex;
         justify-content: space-between;
@@ -422,7 +422,7 @@ body{
             position: absolute;
         }
         .tri_top{
-            top: -8px;
+            top: -7px;
             left: -50px; 
         }
         .tri_bottom{
@@ -452,6 +452,7 @@ body{
             }
         }
     }
+    // 專案標題的文字設定
    .project-title{
        text-align: center;
        font-size: 50px;
@@ -487,7 +488,7 @@ body{
             font-size: 16px;
         }
     }
-    //作品卡片
+    //作品卡片設定
     .card-wrapper{
         display: flex;
         flex-wrap: wrap;
@@ -513,7 +514,7 @@ body{
             }
         }
     }
-    //彈跳式視窗設定
+    //彈跳式視窗通用性設定
     .modal {
         display: none; /* Hidden by default */
         position: fixed; /* Stay in place */
@@ -533,7 +534,14 @@ body{
         margin: auto;
         padding: 20px;
         border: 1px solid #888;
-        width: 80%;
+        width: 60%;
+        margin-top: 50px;
+        @media(max-width:768px){
+            width: 80%;
+        }
+        @media(max-width:425px){
+            width: 90%;
+        }
     }
     /* The Close Button */
     .close {
@@ -547,5 +555,14 @@ body{
         color: #000;
         text-decoration: none;
         cursor: pointer;
+    }
+    // 作品個別區塊設定
+    // 家教社社長
+    .tutor_boss{
+        .certification{
+            .qa{
+                background: #000;
+            }
+        }    
     }
 }

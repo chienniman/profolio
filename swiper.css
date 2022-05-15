@@ -15,7 +15,7 @@ body {
 
 .swiper {
   width: 100%;
-  height: 100%;
+  height: 80%;
 }
 
 .swiper-slide {
@@ -44,6 +44,23 @@ body {
   height: 100%;
   object-fit: cover;
 }
-.no_wrap{
-    white-space: nowrap;
+/* 作品區塊內swiper的個別設定 */
+.slide1{
+  flex-direction: column;
+}
+.game1{
+  display: flex;
+  justify-content: center;
+}
+.text{
+  text-align: left;
+}
+.study,.qa_certi{
+  display: block;
+  margin: 0 auto;
+}
+/* 家教社社長Swiper相關設定 */
+.tutor_boss_swiper .qa{
+  text-align: left;
+  padding: 10%;
 }

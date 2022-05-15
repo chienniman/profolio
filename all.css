@@ -798,7 +798,7 @@ body {
 }
 
 #project .triangel_front .tri_top {
-  top: -8px;
+  top: -7px;
   left: -50px;
 }
 
@@ -937,7 +937,20 @@ body {
   margin: auto;
   padding: 20px;
   border: 1px solid #888;
-  width: 80%;
+  width: 60%;
+  margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  #project .modal-content {
+    width: 80%;
+  }
+}
+
+@media (max-width: 425px) {
+  #project .modal-content {
+    width: 90%;
+  }
 }
 
 #project .close {
@@ -952,6 +965,10 @@ body {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+#project .tutor_boss .certification .qa {
+  background: #000;
 }
 
 .header .logo {

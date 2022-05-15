@@ -228,7 +228,7 @@
                   </svg>
                 </span><br><br> 
                 手機載具程式開發課中，從未接觸過程式的我，僅花不到1個月時間使用MIT App Inventor2做出2D橫向卷軸射擊遊戲，並獲得A+的好成績，不斷克服小問題的成就感讓我愛上寫程式。<br><br>
-                <a href="#">
+                <a href="#Bloody_zombies">
                   Bloody Zombies
                   <svg class="link" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><path d="M172.5 131.1C228.1 75.51 320.5 75.51 376.1 131.1C426.1 181.1 433.5 260.8 392.4 318.3L391.3 319.9C381 334.2 361 337.6 346.7 327.3C332.3 317 328.9 297 339.2 282.7L340.3 281.1C363.2 249 359.6 205.1 331.7 177.2C300.3 145.8 249.2 145.8 217.7 177.2L105.5 289.5C73.99 320.1 73.99 372 105.5 403.5C133.3 431.4 177.3 435 209.3 412.1L210.9 410.1C225.3 400.7 245.3 404 255.5 418.4C265.8 432.8 262.5 452.8 248.1 463.1L246.5 464.2C188.1 505.3 110.2 498.7 60.21 448.8C3.741 392.3 3.741 300.7 60.21 244.3L172.5 131.1zM467.5 380C411 436.5 319.5 436.5 263 380C213 330 206.5 251.2 247.6 193.7L248.7 192.1C258.1 177.8 278.1 174.4 293.3 184.7C307.7 194.1 311.1 214.1 300.8 229.3L299.7 230.9C276.8 262.1 280.4 306.9 308.3 334.8C339.7 366.2 390.8 366.2 422.3 334.8L534.5 222.5C566 191 566 139.1 534.5 108.5C506.7 80.63 462.7 76.99 430.7 99.9L429.1 101C414.7 111.3 394.7 107.1 384.5 93.58C374.2 79.2 377.5 59.21 391.9 48.94L393.5 47.82C451 6.731 529.8 13.25 579.8 63.24C636.3 119.7 636.3 211.3 579.8 267.7L467.5 380z"/></svg>
                 </a>
@@ -387,6 +387,7 @@
           <div class="project-title">
             <h2>專案作品與證照</h2>
           </div>
+          <!-- 團隊專案 -->
           <div class="Project Team_Project">
             <div class="project_name">
               <div class="triangel_front_end">
@@ -413,7 +414,8 @@
               </div>
             </div>
           </div>
-          <div class="Project Team_Project">
+          <!-- 我的個人作品 -->
+          <div class="Project my_Project">
             <div class="project_name">
               <div class="triangel_front_end">
                 <div class="triangel_front">
@@ -453,7 +455,7 @@
                  此專案正在建置中...123
                  <button class="myBtn_multi">Open Modal</button>
                  <div class="modal modal_multi">
-                  <!-- Modal content -->
+                    <!-- Modal content -->
                     <div class="modal-content">
                       <span class="close close_multi">×</span>
                       <img src="./pictures/ipas.jpg" alt="">
@@ -462,7 +464,7 @@
                   </div>
                 </div>      
               </div>
-              <div class="card">
+              <div class="card"  id="Bloody_zombies">
                 <div class="card-img">
                   <img src="./pictures/game/game1.jpg"  alt="殭屍橫向卷軸射擊">
                 </div>  
@@ -475,21 +477,50 @@
                       <span class="close close_multi">×</span>
                       <div class="swiper mySwiper">
                         <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                            <div>
-                              <img src="./pictures/game/game1.jpg" alt="遊戲專題開發1">  
+                          <div class="swiper-slide slide1">
+                            <div class="game1">
+                              <img src="./pictures/game/game1.jpg" alt="遊戲專題開發1" style="width: 80%;">  
                             </div>
                             <div>
-                              <p class="no_wrap">
-                                由於本人是射擊遊戲的死忠粉
+                              <h3 class="title">
+                                遊戲名稱:Bloody Zombies
+                              </h3>
+                              <h4 class="text_title">
+                                遊戲簡介
+                              </h4>
+                              <p class="text">
+                                一款承載著我兒時夢想的遊戲，經典而復古，樸實簡單的玩法有別於
+                                市面上的3A大作，沒有華麗的擊殺特效，卻有著不俗的遊戲體驗，此
+                                頁面是主頁，能夠看到感染者背後的故事、使用的武器特性介紹等  
+                              </p>
+                              <h4 class="text_title">
+                                使用技術
+                              </h4>
+                              <p class="text">
+                                MIT App Inventor2、Adobe Photoshop、小畫家
                               </p>
                             </div>
                           </div>
-                          <div class="swiper-slide">Slide 2</div>
-                          <div class="swiper-slide">Slide 3</div>
-                          <div class="swiper-slide">Slide 4</div>
-                          <div class="swiper-slide">Slide 5</div>
-                          <div class="swiper-slide">Slide 6</div>
+                          <div class="swiper-slide">
+                            <div>
+                              <h3 class="game_flow_title">
+                                遊戲流程圖
+                              </h3>
+                            </div>
+                            <img src="./pictures/game/game_flow.png" alt="遊戲流程圖">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./pictures/game/game2.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./pictures/game/game3.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./pictures/game/game4.jpg" alt="">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./pictures/game/game_score.jpg" alt="專題分數">
+                          </div>
                           <div class="swiper-slide">Slide 7</div>
                           <div class="swiper-slide">Slide 8</div>
                           <div class="swiper-slide">Slide 9</div>
@@ -503,7 +534,8 @@
               </div>
             </div>
           </div>
-          <div class="Project Team_Project">
+          <!-- 相關認證與個人經歷 -->
+          <div class="Project certification">
             <div class="project_name">
               <div class="triangel_front_end">
                 <div class="triangel_front">
@@ -528,18 +560,34 @@
                   <p class="text">
                     食品品保工程師證照
                   </p>
-                  
+                  <button class="myBtn_multi">詳細資訊</button>
+                 <div class="modal modal_multi">
+                  <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close close_multi">×</span>
+                      <img class="qa_certi" src="./pictures/qa_certi.jpg" alt="食品品保工程師證照" style="width: 100%;">
+                      <p>本證照考試一年多試，大部分由具備食品背景學生報考，但是本人在非本科系背景下，一試即通過(一試通過率在10%上下)</p>
+                    </div>
+                  </div>
                 </div>      
               </div>
               <!-- 資訊安全實務研習 -->
               <div class="card">
                 <div class="card-img">
-                  <img src="./pictures/information_security.jpg"  alt="網路資安">
+                  <img src="./pictures/information_security.jpg"  alt="資訊安全實務研習">
                 </div>  
                 <div class="card-text">
                   <p>
                     資訊與安全系統開發與驗證實務
                   </p>
+                  <button class="myBtn_multi">Open Modal</button>
+                 <div class="modal modal_multi">
+                    <!-- Modal content -->
+                    <div class="modal-content">
+                      <span class="close close_multi">×</span>
+                      <img class="study" src="./pictures/study_img.png" alt="資訊與安全系統開發與驗證實務證明" style="width: 100%;">
+                    </div>
+                  </div>
                 </div>      
               </div>
               <!-- python證書 -->
@@ -560,6 +608,94 @@
                  Google數位學程證書
                 </div>      
               </div>
+              <!-- 家教社社長 -->
+              <div class="card">
+                <div class="card-img">
+                  <img src="./pictures/tutor/tutor_icon.jpg" style="width: 300px;" alt="家教社社長">
+                </div>  
+                <div class="card-text">
+                  家教社社長相關經歷
+                  <button class="myBtn_multi">詳細經歷</button>
+                  <div class="modal modal_multi">
+                     <!-- Modal content -->
+                     <div class="modal-content">
+                       <span class="close close_multi">×</span>
+                       <div class="swiper mySwiper  tutor_boss_swiper">
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide slide1">
+                            <div>
+                              <h2>
+                                中興大學家教服務社109學年度社長
+                              </h2>
+                              <ul class="qa">
+                                <li>
+                                  <p>
+                                    Q1:中興大學家教服務社是個怎樣的社團?  
+                                  </p>  
+                                  <P class="answer">
+                                    A:本社團為非營利性服務社團，由我負責組建、管理幹部團隊(5~10人)，
+                                    來幫助學生找到優質的工讀機會，協助家長找到高水準的家教，除此之外，
+                                    舉凡像是迎新活動、社團博覽會的企劃等，也都是家教服務社幹部團隊齊心協力的成果。
+                                    <br><br><br>
+                                  </P>  
+                                </li>
+                                <li>
+                                  <p>
+                                    Q2:具體來說社長的工作內容是甚麼?  
+                                  </p>
+                                  <P class="answer">
+                                    A:<br>
+                                    1.作為溝通橋梁，處理社團、學校、客戶之間三者，例如社團運營、舉辦活動需要的經費，
+                                    就是由我撰寫活動計畫書，透過教育部高教深耕計畫向課指組申請經費。<br><br>
+                                    2.客戶有想要找特定領域人才(統計學、程式設計等)，會透過家教社粉專私訊小編
+                                    ，再轉手本人親自處理。<br><br>
+                                    3.我們團隊會服務並輔導想要成為家教卻無經驗的學生，由幹部一對一指導，並協助媒合合適的客戶。
+                                    <br><br><br>
+                                  </P>  
+                                </li>
+                                <li>
+                                  <p>
+                                    Q3:有舉辦過的活動、企劃、團隊的照片可以提供嗎? 
+                                  </p>  
+                                  <P class="answer">
+                                    A:涉及第三方肖像權部分恕無法提供，但是能夠提供部分活動頁、計畫內容等非隱私、非機密部分
+                                    <br><br>
+                                  </P> 
+                                </li>
+                                <li>
+                                  <p>
+                                    Q4:本身有擔任家教嗎?有印象最深刻的案件嗎? 
+                                  </p>  
+                                  <P class="answer">
+                                    A:本人從大二開始擔任數學家教，目前為止教過10餘位學生，大多數的學生在經過我精心設計的
+                                    客製化課程後成績都能獲得顯著提升，印象最深的是一名國中生從數學沒有及格過，本人教學數學
+                                    2個月後獲得92的高分，客戶甚至主動包了雙倍紅包給我。
+                                  </P> 
+                                </li>
+                              </ul>
+                            </div>  
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./pictures/tutor/tutor_news.jpg" alt="迎新茶會" style="width: 100%;">
+                          </div>
+                          <div class="swiper-slide">
+                            <img src="./pictures/tutor/tutor_plan (2).jpg" alt="" style="width:100%;">
+                          </div>
+                          <div class="swiper-slide">Slide 4</div>
+                          <div class="swiper-slide">Slide 5</div>
+                          <div class="swiper-slide">Slide 6</div>
+                          <div class="swiper-slide">Slide 7</div>
+                          <div class="swiper-slide">Slide 8</div>
+                          <div class="swiper-slide">Slide 9</div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                      </div>
+                     </div>
+                   </div>
+                </div>      
+              </div>          
             </div>
           </div>
         </section>

@@ -909,6 +909,28 @@ body {
   width: 100% !important;
 }
 
+#project .all_pass_project {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #54BDAF;
+  border: 10px solid  #F4BD72;
+  border-radius: 20px;
+}
+
+#project .all_pass_title {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+#project .all_pass_project_card-text {
+  padding: 20px 5px;
+  width: 70%;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+}
+
 #project .modal {
   display: none;
   /* Hidden by default */

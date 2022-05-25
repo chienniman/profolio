@@ -514,6 +514,24 @@ body{
             }
         }
     }
+    // 結訓專題
+    .all_pass_project{
+        display: flex;
+        background: #54BDAF;
+        border: 10px solid  #F4BD72 ;
+        border-radius: 20px;
+    }
+    .all_pass_title{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .all_pass_project_card-text{
+        padding: 20px 5px;
+        width: 70%;
+        color: white;
+        font-weight: 600;
+        font-size: 20px;
+    }
     //彈跳式視窗通用性設定
     .modal {
         display: none; /* Hidden by default */

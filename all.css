@@ -862,7 +862,7 @@ body {
 }
 
 #project .my_project::after {
-  content: '我的個人作品';
+  content: '程式相關作品';
   font-size: 16px;
 }
 
@@ -991,6 +991,23 @@ body {
 
 #project .tutor_boss .certification .qa {
   background: #000;
+}
+
+#footer {
+  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer p {
+  font-size: 24px;
 }
 
 .header .logo {

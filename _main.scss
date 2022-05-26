@@ -377,7 +377,7 @@ body{
     @media(max-width:425px){
         padding: 100px 20px;
     }
-    background: $primary-color;
+    background: $primary-color;;
     .project_name{
         position: relative;
         background: whitesmoke;
@@ -532,6 +532,7 @@ body{
         font-weight: 600;
         font-size: 20px;
     }
+   
     //彈跳式視窗通用性設定
     .modal {
         display: none; /* Hidden by default */
@@ -583,4 +584,5 @@ body{
             }
         }    
     }
+   
 }

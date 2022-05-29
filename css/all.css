@@ -281,8 +281,8 @@ body {
   position: relative;
   width: 100%;
   height: 100vh;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(144, 167, 241, 0.6)), to(rgba(255, 255, 255, 0.6))), url("./pictures/christopher-gower-m_HRfLhgABo-unsplash.jpg");
-  background-image: linear-gradient(rgba(144, 167, 241, 0.6), rgba(255, 255, 255, 0.6)), url("./pictures/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(144, 167, 241, 0.6)), to(rgba(255, 255, 255, 0.6))), url("../pictures/christopher-gower-m_HRfLhgABo-unsplash.jpg");
+  background-image: linear-gradient(rgba(144, 167, 241, 0.6), rgba(255, 255, 255, 0.6)), url("../pictures/christopher-gower-m_HRfLhgABo-unsplash.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -520,7 +520,7 @@ body {
   position: absolute;
   width: 400px;
   height: 300px;
-  background-image: url("./pictures/cloud-removebg-preview.png");
+  background-image: url("../pictures/cloud-removebg-preview.png");
   background-size: cover;
   top: -3%;
   left: 50%;
@@ -546,7 +546,7 @@ body {
 }
 
 #webDeve .bg-img {
-  background-image: url("./pictures/Word Art.png");
+  background-image: url("../pictures/Word Art.png");
   background-attachment: fixed;
 }
 
@@ -907,6 +907,11 @@ body {
 
 #project .card-wrapper .card-img img {
   width: 100% !important;
+}
+
+#project .card-wrapper .card-text {
+  font-size: 24px;
+  color: white;
 }
 
 #project .all_pass_project {

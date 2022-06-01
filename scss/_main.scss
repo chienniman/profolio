@@ -536,7 +536,21 @@ body{
         font-weight: 600;
         font-size: 20px;
     }
-   
+    // 個人作品
+    .card-text{
+        margin-top: 10px;
+        text-align: center;
+    }
+    .skill_tags{
+        display: flex;
+        flex-wrap: wrap;
+        li{
+            background: #54BDAF;
+            color: white;
+            padding: 5px 10px;
+            margin: 10px;
+        }
+    }
     //彈跳式視窗通用性設定
     .modal {
         display: none; /* Hidden by default */

@@ -562,7 +562,12 @@
               4.專案整合<br>
               5.協助除錯與教學<br>
             </p>
-            <a href="" target="_blank">詳細經歷(Hackmd筆記)</a>
+            <a href="https://hackmd.io/MSVf50pfTe2Lenq9KmeSJw" target="_blank">
+              詳細經歷(Hackmd筆記)
+            </a>
+            <a href="">
+              負責程式碼圖文解說PDF檔
+            </a>
           </div>
         </div>
       </div>
@@ -589,30 +594,29 @@
                 <img
                 src="./pictures/project_pic1.jpg"
                 style="width: 300px"
-                alt="響印式一頁官網"
+                alt="響應式一頁官網"
               />
               </a>
             </div>
             <div class="card-text">魔幻電競館</div>
-          </div>
-          <div class="card">
-            <div class="card-img">
-              <img
-                src="https://dummyimage.com/720x400"
-                style="width: 300px"
-                alt="多人開發專題"
-              />
-            </div>
-            <div class="card-text">此專案正在建置中...</div>
+            <ul class="skill_tags">
+              <li>SCSS</li>
+              <li>CSS</li>
+              <li>RWD</li>
+              <li>JavaScript</li>
+              <li>Vue.js</li>
+            </ul>
           </div>
           <!-- 天氣卡片API -->
           <div class="card">
             <div class="card-img">
-              <img
+              <a href="https://chienniman.github.io/weatherCard/index.html" target="_blank">
+                <img
                 src="./pictures/open_data.png"
                 style="width: 300px"
                 alt="天氣卡片API"
-              />
+              />  
+              </a>
             </div>
             <div class="card-text">
               天氣小卡片
@@ -623,6 +627,13 @@
                 線上看
               </a>
             </div>
+            <ul class="skill_tags">
+              <li>Bootstrap5</li>
+              <li>SCSS</li>
+              <li>Fetch</li>
+              <li>JavaScript</li>
+              <li>Vue.js</li>
+            </ul>
           </div>
           <!-- 殭屍橫向卷軸射擊遊戲 -->
           <div class="card" id="Bloody_zombies">
@@ -632,6 +643,9 @@
             <div class="card-text">
               橫向卷軸射擊遊戲Bloody zombies
               <button class="myBtn_multi">詳細資訊</button>
+              <ul class="skill_tags">
+                <li>MIT App Inventor2</li>
+              </ul>
               <div class="modal modal_multi">
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -684,9 +698,6 @@
                           alt="專題分數"
                         />
                       </div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -714,42 +725,17 @@
           </h3>
         </div>
         <div class="card-wrapper">
-          <!-- 經濟部證書 -->
-          <div id="ipas" class="card">
-            <div class="card-img">
-              <img src="./pictures/ipas.jpg" alt="經濟部人才認證" />
-            </div>
-            <div class="card-text">
-              <p class="text">食品品保工程師證照</p>
-              <button class="myBtn_multi">詳細資訊</button>
-              <div class="modal modal_multi">
-                <!-- Modal content -->
-                <div class="modal-content">
-                  <span class="close close_multi">×</span>
-                  <img
-                    class="qa_certi"
-                    src="./pictures/qa_certi.jpg"
-                    alt="食品品保工程師證照"
-                    style="width: 100%"
-                  />
-                  <p>
-                    本證照考試一年多試，大部分由具備食品背景學生報考，但是本人在非本科系背景下，一試即通過(一試通過率在10%上下)
-                  </p>
-                </div>
-              </div>
-            </div>
-          </div>
           <!-- 資訊安全實務研習 -->
           <div class="card">
             <div class="card-img">
               <img
-                src="./pictures/information_security.jpg"
+                src="./pictures/study_img.png"
                 alt="資訊安全實務研習"
               />
             </div>
             <div class="card-text">
               <p>資訊與安全系統開發與驗證實務</p>
-              <button class="myBtn_multi">Open Modal</button>
+              <button class="myBtn_multi">詳細資訊</button>
               <div class="modal modal_multi">
                 <!-- Modal content -->
                 <div class="modal-content">
@@ -875,12 +861,6 @@
                           style="width: 100%"
                         />
                       </div>
-                      <div class="swiper-slide">Slide 4</div>
-                      <div class="swiper-slide">Slide 5</div>
-                      <div class="swiper-slide">Slide 6</div>
-                      <div class="swiper-slide">Slide 7</div>
-                      <div class="swiper-slide">Slide 8</div>
-                      <div class="swiper-slide">Slide 9</div>
                     </div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-button-prev"></div>
@@ -890,10 +870,37 @@
               </div>
             </div>
           </div>
+          <!-- 經濟部證書 -->
+          <div id="ipas" class="card">
+          <div class="card-img">
+            <img src="./pictures/ipas.jpg" alt="經濟部人才認證" />
+          </div>
+          <div class="card-text">
+            <p class="text">食品品保工程師證照</p>
+            <button class="myBtn_multi">詳細資訊</button>
+            <div class="modal modal_multi">
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close close_multi">×</span>
+                <img
+                  class="qa_certi"
+                  src="./pictures/qa_certi.jpg"
+                  alt="食品品保工程師證照"
+                  style="width: 100%"
+                />
+                <p>
+                  本證照考試一年多試，大部分由具備食品背景學生報考，但是本人在非本科系背景下，一試即通過(一試通過率在10%上下)
+                </p>
+              </div>
+            </div>
+          </div>
+          </div>
         </div>
       </div>
     </section>
-    <section id="contact"></section>
+    <section id="contact">
+      
+    </section>
     <footer id="footer">
       <p>
         Copyright ©2022 簡柏毅Boris. All rights reserved.

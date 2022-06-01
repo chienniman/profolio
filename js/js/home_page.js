@@ -9,7 +9,6 @@ $(function () {
 
  var modalparent = document.getElementsByClassName("modal_multi");
  var modal_btn_multi = document.getElementsByClassName("myBtn_multi");
-
  var span_close_multi = document.getElementsByClassName("close_multi");
 // 點擊開啟的函式
  function setDataIndex() {

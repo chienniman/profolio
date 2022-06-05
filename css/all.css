@@ -922,6 +922,10 @@ body {
   border-radius: 20px;
 }
 
+#project .all_pass_project a {
+  color: #F4BD72;
+}
+
 #project .all_pass_title {
   font-size: 30px;
   margin-bottom: 20px;

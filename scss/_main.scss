@@ -471,21 +471,44 @@ body{
         margin-bottom: 50px;
     }
     .team_project{
+        position: relative;
         &::after{
             content: '結訓專題';
-            font-size: 16px;
+            font-size: 24px;
+            font-weight: 700;
+            @media(max-width:520px){
+                position: absolute;
+                font-size: 16px;
+                left: -100px;
+                top: 15px;
+            }
         }
     }
     .my_project{
         &::after{
-            content: '程式相關作品';
-            font-size: 16px;
+            content: '程式作品';
+            font-size: 24px;
+            font-weight: 700;
+            @media(max-width:520px){
+                position: absolute;
+                font-size: 16px;
+                left: 100px;
+                top: 15px;
+            }
         }
     }
-    .certification{
+    .certification .project_name{
         &::after{
-            content: '證書、研習與其他個人詳細經歷';
-            font-size: 16px;
+            content: '個人詳細經歷';
+            position: absolute;
+            top: 15px;
+            font-size: 24px;
+            font-weight: 700;
+            @media(max-width:520px){
+                font-size: 16px;
+                left: 80px;
+                top: 15px;
+            }
         }
     }
     //作品卡片設定
@@ -511,6 +534,8 @@ body{
         .card-img{
             img{
                 width: 100%!important;
+                height: 250px;
+                object-fit: cover;
             }
         }
         .card-text{
@@ -525,7 +550,7 @@ body{
         border: 10px solid  #F4BD72 ;
         border-radius: 20px;
         a{
-            color: #F4BD72;
+            color: #f8d4a1;
         }
     }
     .all_pass_title{
@@ -533,11 +558,15 @@ body{
         margin-bottom: 20px;
     }
     .all_pass_project_card-text{
+        margin: 0 auto;
         padding: 20px 5px;
         width: 70%;
         color: white;
         font-weight: 600;
         font-size: 20px;
+        @media(max-width:1440px){
+            width: 100%;
+        }
     }
     // 個人作品
     .card-text{
@@ -552,6 +581,7 @@ body{
             color: white;
             padding: 5px 10px;
             margin: 10px;
+            font-size: 16px;
         }
     }
     //彈跳式視窗通用性設定
@@ -604,6 +634,18 @@ body{
                 background: #000;
             }
         }    
+    }
+}
+#contact{
+    color: white;
+    height: 200px;
+    background: #54BDAF;
+    @include flex(center,center);
+    li{
+        @include flex(center,center);
+    }
+    .qr-code{
+        margin-top: 10px;
     }
 }
 #footer{

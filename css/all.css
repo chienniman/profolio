@@ -855,19 +855,54 @@ body {
   margin-bottom: 50px;
 }
 
+#project .team_project {
+  position: relative;
+}
+
 #project .team_project::after {
   content: '結訓專題';
-  font-size: 16px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 520px) {
+  #project .team_project::after {
+    position: absolute;
+    font-size: 16px;
+    left: -100px;
+    top: 15px;
+  }
 }
 
 #project .my_project::after {
-  content: '程式相關作品';
-  font-size: 16px;
+  content: '程式作品';
+  font-size: 24px;
+  font-weight: 700;
 }
 
-#project .certification::after {
-  content: '證書、研習與其他個人詳細經歷';
-  font-size: 16px;
+@media (max-width: 520px) {
+  #project .my_project::after {
+    position: absolute;
+    font-size: 16px;
+    left: 100px;
+    top: 15px;
+  }
+}
+
+#project .certification .project_name::after {
+  content: '個人詳細經歷';
+  position: absolute;
+  top: 15px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+@media (max-width: 520px) {
+  #project .certification .project_name::after {
+    font-size: 16px;
+    left: 80px;
+    top: 15px;
+  }
 }
 
 #project .card-wrapper {
@@ -906,6 +941,9 @@ body {
 
 #project .card-wrapper .card-img img {
   width: 100% !important;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 #project .card-wrapper .card-text {
@@ -923,7 +961,7 @@ body {
 }
 
 #project .all_pass_project a {
-  color: #F4BD72;
+  color: #f8d4a1;
 }
 
 #project .all_pass_title {
@@ -932,11 +970,18 @@ body {
 }
 
 #project .all_pass_project_card-text {
+  margin: 0 auto;
   padding: 20px 5px;
   width: 70%;
   color: white;
   font-weight: 600;
   font-size: 20px;
+}
+
+@media (max-width: 1440px) {
+  #project .all_pass_project_card-text {
+    width: 100%;
+  }
 }
 
 #project .card-text {
@@ -957,6 +1002,7 @@ body {
   color: white;
   padding: 5px 10px;
   margin: 10px;
+  font-size: 16px;
 }
 
 #project .modal {
@@ -1019,6 +1065,37 @@ body {
 
 #project .tutor_boss .certification .qa {
   background: #000;
+}
+
+#contact {
+  color: white;
+  height: 200px;
+  background: #54BDAF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contact .qr-code {
+  margin-top: 10px;
 }
 
 #footer {
